@@ -71,13 +71,13 @@ func process(w http.ResponseWriter, r *http.Request) {
 
 	// Проверка на заполнение (Доработать!)
 	if sliceMsg["name"] == "" {
-		fmt.Fprintln(w, "Не заполнено поле 'Ваше Имя'")
+		fmt.Fprintln(w, "Не заполнено поле \"Ваше Имя\"")
 	} else if len(sliceMsg["phone"]) > 12 || sliceMsg["phone"] == ""  {
-		fmt.Fprintln(w, "Не заполнено поле 'Телефон', либо не коретно введен номер")
+		fmt.Fprintln(w, "Не заполнено поле \"Телефон\", либо не коретно введен номер")
 	} else if sliceMsg["message"] == "" {
-		fmt.Fprintln(w, "Не заполнено поле 'Сообщение'")
+		fmt.Fprintln(w, "Не заполнено поле \"Сообщение\"")
 	} else {
-		fmt.Fprintln(w, "Сообщение отправлено")
+		fmt.Fprintln(w, "<span class=\"_success\">Сообщение отправлено!</span>")
 		// Формируем текс сообщения в телеграм
 		text := fmt.Sprintf(
 			"`%s`\n" +

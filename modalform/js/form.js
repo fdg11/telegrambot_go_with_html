@@ -38,8 +38,12 @@ $(document).ready(function () {
         return false;
     });
     //для стилей формы
-      var $input = $('.form-fieldset > input');
+     /* var $input = $('.form-fieldset > input');
       $input.blur(function (e) {
         $(this).toggleClass('filled', !!$(this).val());
       });
+      var $textarea = $('.form-fieldset > textarea');
+      $textarea.blur(function (e) {
+        $(this).toggleClass('filled', !!$(this).val());
+      }); */
 });
