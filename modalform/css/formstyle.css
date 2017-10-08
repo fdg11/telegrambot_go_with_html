@@ -21,7 +21,7 @@
 }
 /*Область формы*/
 .formArea {
-  width: 404px;
+  width: 30vmax;
   margin: 0 auto;
   padding: 40px 15px 40px 15px;
   text-align: center;
@@ -32,12 +32,12 @@
 }
 
 .formTitle {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #b8c2d1;
   margin-bottom: 15px;
 }
 .msgs {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #E66161;
   margin-bottom: 15px;
 }
